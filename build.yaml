@@ -1,11 +1,11 @@
 include:
   - board: xiao_ble//zmk        # ou o board real usado no Flake
     shield: anywhy_flake_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_USB=n
 
   - board: xiao_ble//zmk
     shield: anywhy_flake_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_USB=n
 
   - board: xiao_ble//zmk
     shield: settings_reset
