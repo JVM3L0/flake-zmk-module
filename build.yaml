@@ -12,6 +12,8 @@ include:
 
   - board: xiao_ble//zmk  # ou xiao_ble//zmk, conforme a branch do YADS
     shield: flake_dongle dongle_screen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   - board: xiao_ble//zmk
     shield: settings_reset
