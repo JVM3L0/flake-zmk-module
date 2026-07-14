@@ -13,11 +13,10 @@
         events = <0>;
     };
 
-    // Cole aqui o default_transform copiado do shield real do Flake
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <...>;
-        rows = <...>;
-        map = < ... >;
+        rows = <1>;
+        columns = <1>;
+        map = <RC(0,0)>;
     };
 };
