@@ -1,16 +1,16 @@
 include:
-  - board: xiao_ble//zmk        # ou o board real usado no Flake
+  - board: seeeduino_xiao_ble
     shield: anywhy_flake_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_USB=n
 
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: anywhy_flake_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_USB=n
 
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
 
-  - board: xiao_ble//zmk  # ou xiao_ble//zmk, conforme a branch do YADS
+  - board: seeeduino_xiao_ble
     shield: flake_dongle dongle_screen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
