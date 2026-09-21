@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: janpfischer
       url-base: https://github.com/janpfischer
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
+    - name: JVM3L0
+      url-base: https://github.com/JVM3L0
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
       remote: janpfischer
       revision: upgrade-4.1
     - name: prospector-zmk-module
-      remote: carrefinho
+      remote: JVM3L0
       revision: feat/new-status-screens
   self:
     path: config
