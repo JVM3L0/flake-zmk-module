@@ -11,5 +11,5 @@ include:
     shield: settings_reset
 
   - board: xiao_ble//zmk
-    shield: flake_dongle dongle_screen
+    shield: flake_dongle prospector_adapter
     cmake-args: -DCONFIG_ZMK_STUDIO=y
