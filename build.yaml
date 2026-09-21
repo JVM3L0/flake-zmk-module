@@ -12,5 +12,4 @@ include:
 
   - board: xiao_ble//zmk
     shield: flake_dongle dongle_screen
-    snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
