@@ -10,7 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/manifest.yml
+      import: sysbuild/manifest.yml
     - name: zmk-dongle-screen
       remote: janpfischer
       revision: main
