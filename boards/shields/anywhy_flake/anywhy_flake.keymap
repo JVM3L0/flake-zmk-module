@@ -120,26 +120,29 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name = "BASE";
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
-&kp ESC    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
-&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
-&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
-           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2   &kp LSHFT  &kp RET    &kp LALT  &kp LCTRL
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6   &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
+&kp ESC    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y    &kp U      &kp I      &kp O     &kp P      &kp BSPC
+&kp LSHFT  &kp A     &kp S     &kp D      &kp F      &kp G     &kp H    &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp TAB    &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N    &kp M      &kp APOS   &kp DOT   &kp FSLH   &kp DEL
+           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2    &kp RET    &kp RALT   &kp RCTRL &kp RGUI
             >;
         };
 
         num {
+            display-name = "NUM";
             bindings = <
-&none  &none     &none          &none      &none      &none       &none      &none   &none   &none   &none      &none
-&none  &kp ESC   &kp BACKSPACE  &kp TAB    &kp ENTER  &kp DEL     &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS  &none
-&none  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp LBKT    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0     &none
-&none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp RBKT    &kp SQT    &kp N1  &kp N2  &kp N3  &kp BSLH   &none
-                 &trans         &trans     &trans     &trans      &none      &none   &trans  &trans  &trans     &trans
+&trans  &trans    &trans    &trans     &trans     &kp N5     &trans     &trans  &trans  &trans  &trans     &trans
+&trans  &kp N1    &kp N2    &kp N3     &kp N4     &trans     &kp GRAVE  &kp N7  &kp N8  &kp N9  &trans     &trans
+&trans  &kp CAPS  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SQT    &kp N1  &kp N2  &kp N3  &kp N0     &kp BSLH
+                  &trans    &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans
             >;
         };
 
         fn {
+            display-name = "FN";
             bindings = <
 &none  &none    &none   &none   &none   &none       &none   &none       &none         &none         &none         &none
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &soft_off   &bt2    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP  &none
@@ -150,6 +153,7 @@
         };
 
         gaming {
+            display-name = "GAME";
             bindings = <
 &kp ESC    &kp N1     &kp N2  &kp N3  &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
 &kp CAPS   &kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
@@ -160,6 +164,7 @@
         };
 
         gaming_num {
+            display-name = "G-NUM";
             bindings = <
 &trans  &trans   &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp ESC  &kp BSPC  &kp CAPS  &kp ENTER  &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans
