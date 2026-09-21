@@ -10,7 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: true
+      import: app/west.yml
     - name: zmk-dongle-screen
       remote: janpfischer
       revision: upgrade-4.1
