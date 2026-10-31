@@ -16,6 +16,6 @@ manifest:
       revision: upgrade-4.1
     - name: prospector-zmk-module
       remote: JVM3L0
-      revision: feat/velk-layout
+      revision: feat/new-status-screens
   self:
     path: config
